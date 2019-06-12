@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./stylesheet/main.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Postmates | Delivery Near Me</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">Postmates</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- <form class="form-inline ml-2">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <input class="form-control" type="search" placeholder="Search for anything..." aria-label="Search">
+                </form> -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="#">Food</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Drinks</a>
+                        </li> -->
+                        <li class="nav-item mr-2">
+                            <a href="#" class="btn btn-outline-secondary">Log in</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="btn btn-dark">Sign Up</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section class="hero">
+            <div class="para-branding">
+                <div class="logo">
+                    <img src="./assets/logo.jpg" alt="">
+                </div>
+                <div class="slogen">
+                    <h2>Anything, anytime, anywhere. We get it.</h2>
+                    <p>Food, drinks and groceries available for delivery or pickup.</p>
+                </div>
+            </div>
+            <div class="row">
+                <form class="form-inline">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">
+                                <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Miami" aria-label="Miami" aria-describedby="basic-addon1">
+                        <button type="submit" class="form-control btn btn-success">
+                            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </header>
+    <!-- Details Section -->
+    <section class="container details">
+        <div class="text-details">
+            <h2>Discover, order, and track in the app.</h2>
+            <p>
+                With the largest on-demand network in the industry, you can explore your city, find its hidden hotspots, and watch as we bring your new favorites right to your door. Download the app for iOS or Android for free.
+            </p>
+            <form class="form-inline">
+                <div class="input-group w-100">
+                    <input type="text" class="form-control py-4" placeholder="Enter your phone number to get the app.">
+                </div>
+                <button class="btn btn-success text-light mt-4">TEXT ME</button>
+            </form>
+        </div>
+        <img src="./assets/phone.webp" class="img-fluid" alt="mobile phone">
+    </section>
+    <!-- Country Section -->
+    <section class=" country">
+        <div class="container">
+            <div class="row px-2">
+                <h5>Choose an area to explore</h5>
+                <a href="#" class="btn btn-link text-secondary ml-auto">View all</a>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-3 col-6 p-md-0">
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href="#">San Francisco</a></li>
+                        <li class="list-group-item"><a href="#">Miami</a></li>
+                        <li class="list-group-item"><a href="#">San Diego</a></li>
+                        <li class="list-group-item"><a href="#">East Bay</a></li>
+                        <li class="list-group-item"><a href="#">Long Beach</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-6 p-md-0">
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href="#">Miami</a></li>
+                        <li class="list-group-item"><a href="#">San Francisco</a></li>
+                        <li class="list-group-item"><a href="#">East Bay</a></li>
+                        <li class="list-group-item"><a href="#">San Diego</a></li>
+                        <li class="list-group-item"><a href="#">Long Beach</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-6 p-md-0 d-none d-sm-block">
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href="#">Miami</a></li>
+                        <li class="list-group-item"><a href="#">East Bay</a></li>
+                        <li class="list-group-item"><a href="#">San Diego</a></li>
+                        <li class="list-group-item"><a href="#">Long Beach</a></li>
+                        <li class="list-group-item"><a href="#">San Francisco</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-6 p-md-0 d-none d-sm-block">
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href="#">San Diego</a></li>
+                        <li class="list-group-item"><a href="#">San Francisco</a></li>
+                        <li class="list-group-item"><a href="#">Long Beach</a></li>
+                        <li class="list-group-item"><a href="#">East Bay</a></li>
+                        <li class="list-group-item"><a href="#">Miami</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Delivery Features -->
+    <section class="delivery container">
+        <img src="./assets/banana.webp" class="img-fluid" alt="">
+        <div class="text-details">
+            <h2>We deliver more than dinner.</h2>
+            <p>Get groceries and alcohol delivered in under an hour so you can spend your time living your best life. Whether you need a gallon of milk or a handle of vodka, we get it.</p>
+        </div>
+    </section>
+    <!-- Page Breaker -->
+    <section class="page-break">
+        <div class="container">
+            <div class="text-details">
+                <h3>Get Unlimited Free Delivery</h3>
+                <p>With Postmates Unlimited, you get free delivery with no blitz pricing or small cart fees – ever. Try it free with a 7-day free trial, cancel anytime.</p>
+                <a href="#" class="btn btn-link text-success">TRY UNLIMITED FREE</a>
+            </div>
+        </div>
+    </section>
+    <!-- Feature -1 -->
+    <section class="container details feature-1">
+        <div class="text-details">
+            <h2>All of the flavor, none of the wait.</h2>
+            <p>
+                No fees, just fast service. Order takeout with Postmates Pickup and we’ll let you know when it’s ready. No wallet. No wait.
+            </p>
+            <form class="form-inline">
+                <button class="btn btn-success text-light mt-4">Try Pickup Now</button>
+            </form>
+        </div>
+        <img src='./assets/f1.webp' class="img-fluid" alt="mobile phone">
+    </section>
+    <!-- Feature -2 -->
+    <section class="container details feature-2">
+        <div class="text-details">
+            <h2>The only gift that delivers.</h2>
+            <p>
+                They're customizable, fun to receive, and delivered instantly. Postmates Gift Cards can be used to buy anything in your city, delivered in minutes.
+            </p>
+            <form class="form-inline">
+                <button class="btn btn-success text-light mt-4">SEND A GIFT CARD</button>
+            </form>
+        </div>
+        <img src='./assets/f2.webp' class="img-fluid" alt="mobile phone">
+    </section>
+    <!-- Order Section -->
+    <section class="order">
+        <div class="container">
+            <h1>Ready to Order?</h1>
+            <p>Browse local restaurants and businesses available for delivery by entering your address below.</p>
+            <div class="row">
+                <form class="form-inline">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1"><i class="fa fa-location-arrow"
+                                    aria-hidden="true"></i></span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Miami" aria-label="Miami" aria-describedby="basic-addon1">
+                        <button type="submit" class="form-control btn btn-success">
+                            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="text-details container">
+            <p>Postmates is the largest, most reliable on-demand delivery and pickup platform.</p>
+            <p>Able to deliver anything from anywhere, Postmates is the food delivery, grocery delivery, whatever-you-can-think-of delivery app to bring what you crave right to your door<a href="#" class="btn btn-link">Read More</a></p>
+        </div>
+        <main class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <h3 class="text-light">Postmates</h3>
+                </div>
+                <div class="col-md-2 col-6">
+                    <ul class="list-group">
+                        <li class="list-group-item">POSTMATES</li>
+                        <li class="list-group-item"><a href="#">About</a></li>
+                        <li class="list-group-item"><a href="#">Careers</a></li>
+                        <li class="list-group-item"><a href="#">Blog</a></li>
+                        <li class="list-group-item"><a href="#">Press & Media</a></li>
+                        <li class="list-group-item"><a href="#">Civil Labs</a></li>
+                        <li class="list-group-item"><a href="#">Unlimited</a></li>
+                        <li class="list-group-item"><a href="#">Gift Cards</a></li>
+                        <li class="list-group-item"><a href="#">Pick up</a></li>
+                        <li class="list-group-item"><a href="#">Customer Help</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-6">
+                    <ul class="list-group">
+                        <li class="list-group-item">Merchansts</li>
+                        <li class="list-group-item"><a href="#">Sell on Postmates</a></li>
+                        <li class="list-group-item"><a href="#">Developers</a></li>
+                        <li class="list-group-item"><a href="#">API</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-6">
+                    <ul class="list-group">
+                        <li class="list-group-item">Fleet</li>
+                        <li class="list-group-item"><a href="#">Join the Fleet</a></li>
+                        <li class="list-group-item"><a href="#">Fleet Help</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-6">
+                    <ul class="list-group">
+                        <li class="list-group-item">Follow Us</li>
+                        <li class="list-group-item"><a href="#">Facebook</a></li>
+                        <li class="list-group-item"><a href="#">Twitter</a></li>
+                        <li class="list-group-item"><a href="#">Snapchat</a></li>
+                        <li class="list-group-item"><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <ul class="list-group">
+                        <li class="list-group-item">Cities</li>
+                        <li class="list-group-item"><a href="#">Tampa</a></li>
+                        <li class="list-group-item"><a href="#">Ft. Lauderdale</a></li>
+                        <li class="list-group-item"><a href="#">Oriando</a></li>
+                        <li class="list-group-item"><a href="#">Delivery Near Me</a></li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        <div class="container footer">
+            <div class="row">
+                <a href="#">&copy;2019 POSTMATES INC</a>
+                <a href="#">TERMS</a>
+                <a href="#">PRIVACY</a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
