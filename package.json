@@ -1,0 +1,20 @@
+{
+    "name": "work",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "concurrently --kill-others \"npm run sass:compile\" \"npm run html:compile\"",
+        "sass:compile": "sass ./scss/:public/stylesheet --watch",
+        "html:compile": "pug ./templates/pages -o ./public -P -w"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "bootstrap": "^4.3.1",
+        "concurrently": "^4.1.0",
+        "pug-cli": "^1.0.0-alpha6",
+        "sass": "^1.21.0"
+    }
+}
