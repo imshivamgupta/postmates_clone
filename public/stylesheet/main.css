@@ -20,6 +20,11 @@ header nav ul.navbar-nav .nav-item .btn {
   text-transform: uppercase;
   border-radius: 16px;
 }
+@media (max-width: 360px) {
+  header nav ul.navbar-nav .nav-item .btn {
+    margin-bottom: 10px;
+  }
+}
 header nav form.form-inline input[type=search] {
   border: none;
   background-color: transparent;
@@ -42,7 +47,7 @@ header section.hero {
   flex-direction: column;
   height: 80vh;
   background-color: #f5e7d8;
-  background-image: url("https://raster-static.postmates.com?url=https://buyer-static.postmates.com/dist/prod/home-header-left.04552a2c34787549b545a797aa8ac3cdc4c3aaa67515f55eb008711ef61c6ec1e78ee280099247cf09c25ab226407d53b2bfe0886061eb71152a0a51090d4d22.png&quality=85&w=0&h=1000&mode=auto&format=webp&v=4"), url("https://raster-static.postmates.com?url=https://buyer-static.postmates.com/dist/prod/home-header-right.23b252b75d0ed0940e0c552316fe462448af95371705b54554bb20848ff20ffa08978f8642e540956db79719bfda4a8ca5a2213fabb737184c3ce17b5c5fcc5f.png&quality=85&w=0&h=1000&mode=auto&format=webp&v=4");
+  background-image: url("./../assets/food.png"), url("./../assets/food.png");
   background-size: 50%, 50%;
   background-repeat: no-repeat, no-repeat;
   background-position: -50% 100%, 148% 100%;
@@ -67,6 +72,11 @@ header section.hero .para-branding .slogen h2 {
 }
 header section.hero .para-branding .slogen p {
   font-size: 17px;
+}
+@media (max-width: 360px) {
+  header section.hero .para-branding .slogen p {
+    display: none;
+  }
 }
 header section.hero .row form .input-group .input-group-text {
   background-color: #fff;
@@ -100,25 +110,29 @@ header section.hero .row form button {
 
 section.details {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   padding-top: 120px;
   padding-bottom: 80px;
 }
 @media (max-width: 360px) {
   section.details {
-    flex-direction: column;
+    flex-direction: column-reverse;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    text-align: center;
   }
 }
 section.details img {
   width: 540px;
   height: 444px;
   object-fit: cover;
-  margin-left: 34px;
 }
 @media (max-width: 360px) {
   section.details img {
     width: 240px;
     height: 180px;
+    margin-bottom: 20px;
   }
 }
 section.details .text-details {
@@ -134,6 +148,11 @@ section.details .text-details p {
   text-align: left;
   letter-spacing: 0.14px;
   line-height: 26px;
+}
+@media (max-width: 360px) {
+  section.details .text-details p {
+    text-align: center;
+  }
 }
 section.details .text-details form input:focus {
   outline: none !important;
@@ -152,6 +171,11 @@ section.details .text-details form button {
 section.details .text-details form button:focus {
   outline: none !important;
   box-shadow: none;
+}
+@media (max-width: 360px) {
+  section.details .text-details form button {
+    width: 320px;
+  }
 }
 
 section.country .row h5 {
@@ -180,6 +204,8 @@ section.delivery {
 @media (max-width: 360px) {
   section.delivery {
     flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 40px;
   }
 }
 section.delivery img {
@@ -190,6 +216,7 @@ section.delivery img {
   section.delivery img {
     width: 328px;
     height: 249px;
+    margin-bottom: 20px;
   }
 }
 section.delivery .text-details {
@@ -199,6 +226,7 @@ section.delivery .text-details {
 @media (max-width: 360px) {
   section.delivery .text-details {
     margin-left: 0px;
+    text-align: center;
   }
 }
 section.delivery .text-details h2 {
@@ -210,19 +238,24 @@ section.delivery .text-details p {
 }
 
 section.page-break {
-  background-image: url("https://raster-static.postmates.com?url=https://buyer-static.postmates.com/dist/prod/home-unlimited.85d1a31c059e83328f66ba1c72f2ef609e30c9e9e00f16c745e06654ff44de81c7545c87476730a09214219bedc86353c89faf7f14fc57ffcbd36d5df5e2813c.png&amp;quality=85&amp;w=1010&amp;h=0&amp;mode=auto&amp;format=webp&amp;v=4");
+  background-image: url("./../assets/shoes.png");
   background-size: 42%;
   background-position: right 25%;
   background-repeat: no-repeat;
   background-color: #f7f7f8;
   padding: 40px 0;
 }
+@media (max-width: 360px) {
+  section.page-break {
+    background-image: none;
+  }
+}
 section.page-break .text-details {
   width: 512px;
 }
 @media (max-width: 360px) {
   section.page-break .text-details {
-    width: 80%;
+    width: 100%;
   }
 }
 section.page-break .text-details p {
@@ -242,7 +275,9 @@ section.feature-1 {
 }
 @media (max-width: 360px) {
   section.feature-1 {
-    flex-direction: column;
+    flex-direction: column-reverse;
+    padding-top: 30px;
+    padding-bottom: 20px;
   }
 }
 section.feature-1 img {
@@ -265,7 +300,9 @@ section.feature-2 {
 }
 @media (max-width: 360px) {
   section.feature-2 {
-    flex-direction: column;
+    flex-direction: column-reverse;
+    padding-top: 30px;
+    padding-bottom: 40px;
   }
 }
 section.feature-2 img {
@@ -294,6 +331,11 @@ section.order .container {
 section.order h1 {
   font-size: 56px;
   font-weight: 600;
+}
+@media (max-width: 360px) {
+  section.order h1 {
+    font-size: 32px;
+  }
 }
 section.order p {
   width: 418px;
@@ -341,6 +383,12 @@ footer .text-details {
   padding-top: 72px;
   padding-bottom: 56px;
 }
+@media (max-width: 360px) {
+  footer .text-details {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+}
 footer .text-details p {
   line-height: 22px;
   font-size: 16px;
@@ -360,6 +408,12 @@ footer main {
   padding-top: 96px;
   padding-bottom: 163px;
 }
+@media (max-width: 360px) {
+  footer main {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+}
 footer main ul.list-group li.list-group-item {
   color: #fff;
   background-color: transparent;
@@ -370,6 +424,11 @@ footer main ul.list-group li.list-group-item:first-child {
   text-transform: uppercase;
   font-weight: 500;
 }
+@media (max-width: 360px) {
+  footer main ul.list-group li.list-group-item:first-child {
+    margin-top: 20px;
+  }
+}
 footer main ul.list-group li.list-group-item a {
   color: #8F95A3;
   font-size: 14px;
@@ -379,6 +438,11 @@ footer .footer {
   display: flex;
   justify-content: center;
   padding-bottom: 50px;
+}
+@media (max-width: 360px) {
+  footer .footer {
+    padding-bottom: 10px;
+  }
 }
 footer .footer a {
   color: #8F95A3;
