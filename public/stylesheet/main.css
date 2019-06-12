@@ -9746,7 +9746,7 @@ section.details {
   padding-top: 120px;
   padding-bottom: 80px;
 }
-@media (min-width: 360px) {
+@media (max-width: 360px) {
   section.details {
     flex-direction: column;
   }
@@ -9757,7 +9757,7 @@ section.details img {
   object-fit: cover;
   margin-left: 34px;
 }
-@media (min-width: 360px) {
+@media (max-width: 360px) {
   section.details img {
     width: 240px;
     height: 180px;
@@ -9819,7 +9819,7 @@ section.delivery {
   padding-top: 115px;
   padding-bottom: 80px;
 }
-@media (min-width: 360px) {
+@media (max-width: 360px) {
   section.delivery {
     flex-direction: column;
   }
@@ -9828,7 +9828,7 @@ section.delivery img {
   width: 428px;
   height: 326px;
 }
-@media (min-width: 360px) {
+@media (max-width: 360px) {
   section.delivery img {
     width: 328px;
     height: 249px;
@@ -9838,7 +9838,7 @@ section.delivery .text-details {
   max-width: 390px;
   margin-left: 110px;
 }
-@media (min-width: 360px) {
+@media (max-width: 360px) {
   section.delivery .text-details {
     margin-left: 0px;
   }
@@ -9862,7 +9862,7 @@ section.page-break {
 section.page-break .text-details {
   width: 512px;
 }
-@media (min-width: 360px) {
+@media (max-width: 360px) {
   section.page-break .text-details {
     width: 80%;
   }
@@ -9882,7 +9882,7 @@ section.feature-1 {
   padding-bottom: 60px;
   justify-content: space-between;
 }
-@media (min-width: 360px) {
+@media (max-width: 360px) {
   section.feature-1 {
     flex-direction: column;
   }
@@ -9892,7 +9892,7 @@ section.feature-1 img {
   height: 370px;
   margin: 0;
 }
-@media (min-width: 360px) {
+@media (max-width: 360px) {
   section.feature-1 img {
     width: 265px;
     height: 294px;
@@ -9905,7 +9905,7 @@ section.feature-2 {
   flex-direction: row-reverse;
   justify-content: space-between;
 }
-@media (min-width: 360px) {
+@media (max-width: 360px) {
   section.feature-2 {
     flex-direction: column;
   }
@@ -9915,7 +9915,7 @@ section.feature-2 img {
   height: 372px;
   margin: 0;
 }
-@media (min-width: 360px) {
+@media (max-width: 360px) {
   section.feature-2 img {
     height: 285px;
     width: 328px;
@@ -9941,7 +9941,7 @@ section.order p {
   width: 418px;
   color: #8F95A3;
 }
-@media (min-width: 360px) {
+@media (max-width: 360px) {
   section.order p {
     width: 80%;
   }
@@ -9954,7 +9954,7 @@ section.order .row form .input-group input.form-control {
   width: 396px;
   padding-left: 0;
 }
-@media (min-width: 360px) {
+@media (max-width: 360px) {
   section.order .row form .input-group input.form-control {
     width: 242px;
   }
