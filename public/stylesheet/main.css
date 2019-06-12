@@ -9702,7 +9702,7 @@ header section.hero .para-branding .slogen h2 {
   line-height: 64px;
   letter-spacing: -3.4px;
 }
-@media (min-width: 360px) {
+@media (max-width: 360px) {
   header section.hero .para-branding .slogen h2 {
     font-size: 32px;
   }
@@ -9718,7 +9718,7 @@ header section.hero .row form .input-group input.form-control {
   width: 396px;
   padding-left: 0;
 }
-@media (min-width: 360px) {
+@media (max-width: 360px) {
   header section.hero .row form .input-group input.form-control {
     width: 242px;
   }
