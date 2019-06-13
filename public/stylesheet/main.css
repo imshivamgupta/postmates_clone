@@ -577,27 +577,26 @@ body.about header section.hero .para-branding .slogen h2 {
   font-weight: 700;
   letter-spacing: 0.14px;
 }
-
-main .text-content {
+body.about main .text-content {
   padding: 64px;
   border-bottom: 1px solid #dbdedf;
 }
 @media (max-width: 776px) {
-  main .text-content {
+  body.about main .text-content {
     padding: 30px 0;
   }
 }
-main .text-content h3 {
+body.about main .text-content h3 {
   font-size: 24px;
   font-weight: 700;
 }
-main .text-content p {
+body.about main .text-content p {
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
   margin: 18px 0;
 }
-main .text-content .list-group .list-group-item {
+body.about main .text-content .list-group .list-group-item {
   padding-top: 21px;
   padding-bottom: 17px;
   background-image: url("./../assets/right-arrow.png");
@@ -606,67 +605,223 @@ main .text-content .list-group .list-group-item {
   background-size: 8px;
   cursor: pointer;
 }
-main .text-content .list-group .list-group-item:first-child {
+body.about main .text-content .list-group .list-group-item:first-child {
   border-top-color: transparent;
 }
 @media (min-width: 776px) {
-  main .text-content .list-group .list-group-item {
+  body.about main .text-content .list-group .list-group-item {
     padding-left: 0;
     border-left-color: transparent;
     border-right-color: transparent;
   }
 }
 @media (max-width: 776px) {
-  main .text-content .list-group .list-group-item {
+  body.about main .text-content .list-group .list-group-item {
     background-position: 95%;
   }
 }
-main .text-content .list-group .list-group-item a {
+body.about main .text-content .list-group .list-group-item a {
   font-size: 15px;
   font-weight: 600;
   color: #2d3138;
   text-decoration: none;
   text-transform: capitalize;
 }
-main .text-content .list-group .list-group-item a span:first-child {
+body.about main .text-content .list-group .list-group-item a span:first-child {
   margin-right: 0.6rem;
 }
-main .team {
+body.about main .team {
   padding: 64px;
   text-align: center;
 }
 @media (max-width: 776px) {
-  main .team {
+  body.about main .team {
     padding: 30px 0;
   }
 }
-main .team h3 {
+body.about main .team h3 {
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 20px;
 }
-main .team p {
+body.about main .team p {
   font-size: 15px;
   max-width: 600px;
   margin: 0 auto;
   letter-spacing: 0.14px;
 }
-main .team .grid {
+body.about main .team .grid {
   margin-top: 64px;
   text-align: left;
 }
 @media (max-width: 776px) {
-  main .team .grid .col-12 {
+  body.about main .team .grid .col-12 {
     margin-bottom: 30px;
   }
 }
-main .team .grid p {
+body.about main .team .grid p {
   line-height: 20px;
 }
-main .team .grid p.name {
+body.about main .team .grid p.name {
   font-size: 15px;
   font-weight: 700;
   margin-top: 10px;
+}
+
+body.pickup header {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(255, 255, 255, 0) 36%), url(./../assets/pickup.jpg);
+  background-size: 108%;
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+}
+body.pickup header nav {
+  background-color: transparent;
+}
+body.pickup header nav form.form-inline {
+  position: relative;
+}
+body.pickup header nav form.form-inline input[type=search] {
+  color: #ffffff;
+}
+body.pickup header nav form.form-inline input[type=search]::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 500;
+}
+body.pickup header nav form.form-inline i {
+  left: 8px;
+  top: 10px;
+  color: #ffffff;
+}
+body.pickup header nav .navbar-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body.pickup header nav .navbar-nav .nav-item .nav-link {
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-size: 12px;
+  padding: 5px 0;
+  margin: 0 0.8rem;
+  color: #ffffff;
+  border-bottom: 1px solid transparent;
+}
+@media (max-width: 546px) {
+  body.pickup header nav .navbar-nav .nav-item .nav-link {
+    display: none;
+  }
+}
+body.pickup header nav .navbar-nav .nav-item .nav-link:hover {
+  border-bottom: 1px solid #ffffff;
+}
+body.pickup header section.hero {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: #ffffff;
+  height: 100vh;
+  background-color: transparent;
+  background-image: none;
+}
+body.pickup header section.hero .para-branding {
+  width: auto;
+  text-align: left;
+}
+body.pickup header section.hero .para-branding .slogen {
+  position: relative;
+}
+body.pickup header section.hero .para-branding .slogen h2 {
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: -2.7px;
+  line-height: 48px;
+}
+body.pickup header section.hero .para-branding .slogen p button {
+  position: absolute;
+  bottom: -100%;
+  text-transform: uppercase;
+  background-color: #00CC99;
+  border-color: #00CC99;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 100px;
+  padding: 16px 70px;
+  letter-spacing: 0.72px;
+}
+body.pickup main {
+  margin-bottom: 100px;
+}
+body.pickup main .text-content {
+  padding: 0 70px;
+}
+body.pickup main .text-content .title {
+  padding-right: 7%;
+}
+body.pickup main .text-content .title h3 {
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: -2.7px;
+  line-height: 46px;
+}
+body.pickup main .text-content .title p {
+  color: #8F95A3;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: -0.4px;
+}
+body.pickup main .text-content ul {
+  list-style-image: url("./../assets/list-image.svg");
+  margin: 0;
+}
+body.pickup main .text-content ul li {
+  font-size: 20px;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+body.pickup section.restaurants .col-md-6:nth-child(2) {
+  padding-left: 7%;
+}
+body.pickup section.restaurants .col-md-6 img {
+  max-width: 150%;
+  position: relative;
+  left: -25%;
+}
+body.pickup section.restaurants .col-md-6 h3 {
+  margin-top: 78px;
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: -2.7px;
+}
+body.pickup section.restaurants .col-md-6 p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #8F95A3;
+  line-height: 32px;
+  letter-spacing: -0.4px;
+  margin-right: 80px;
+}
+body.pickup section.phone-showcase {
+  margin-top: 150px;
+}
+body.pickup section.phone-showcase .row {
+  background-color: #fffccf;
+  padding: 0 70px;
+  max-height: 364px;
+}
+body.pickup section.phone-showcase .row h3 {
+  margin-top: 100px;
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: -2.7px;
+}
+body.pickup section.phone-showcase .row img {
+  position: relative;
+  top: -30%;
+}
+body.pickup section.grab {
+  padding: 150px;
 }
 
 /*# sourceMappingURL=main.css.map */
