@@ -3,6 +3,10 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+.navbar-nav {
+  flex-direction: row;
+}
+
 header nav {
   background-color: #f5e7d8;
 }
@@ -54,7 +58,23 @@ header section.hero {
 }
 @media (max-width: 776px) {
   header section.hero {
-    height: 60vh;
+    height: 70vh;
+  }
+}
+@media (max-width: 500px) {
+  header section.hero {
+    background-image: url("./../assets/food.webp");
+    background-size: 78%;
+    background-repeat: no-repeat;
+    background-position: 50% 120%;
+  }
+}
+@media (min-width: 510px) and (max-width: 776px) {
+  header section.hero {
+    background-image: url("./../assets/food.webp");
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: 50% 120%;
   }
 }
 header section.hero .para-branding {
@@ -77,18 +97,15 @@ header section.hero .para-branding .slogen h2 {
 }
 @media (max-width: 776px) {
   header section.hero .para-branding .slogen h2 {
-    font-size: 48px;
-  }
-}
-@media (max-width: 360px) {
-  header section.hero .para-branding .slogen h2 {
-    font-size: 32px;
+    font-size: 34px;
+    line-height: 34px;
+    margin-bottom: 25px;
   }
 }
 header section.hero .para-branding .slogen p {
   font-size: 17px;
 }
-@media (max-width: 360px) {
+@media (max-width: 776px) {
   header section.hero .para-branding .slogen p {
     display: none;
   }
@@ -150,7 +167,7 @@ section.details img {
     margin-bottom: 20px;
   }
 }
-@media (max-width: 1052px) {
+@media (min-width: 768px) and (max-width: 1052px) {
   section.details img {
     width: 429px;
     height: 351px;
@@ -283,7 +300,7 @@ section.page-break {
   background-color: #f7f7f8;
   padding: 40px 0;
 }
-@media (max-width: 760px) {
+@media (max-width: 764px) {
   section.page-break {
     background-image: none;
   }
