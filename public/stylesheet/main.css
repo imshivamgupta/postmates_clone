@@ -24,11 +24,6 @@ header nav ul.navbar-nav .nav-item .btn {
   text-transform: uppercase;
   border-radius: 16px;
 }
-@media (max-width: 360px) {
-  header nav ul.navbar-nav .nav-item .btn {
-    margin-bottom: 10px;
-  }
-}
 header nav form.form-inline input[type=search] {
   border: none;
   background-color: transparent;
@@ -517,6 +512,161 @@ footer .footer a {
   font-weight: 500;
   margin: 0 0.6rem;
   text-decoration: none;
+}
+
+body.about header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./../assets/about.jpg);
+  background-size: cover;
+}
+body.about header nav {
+  background-color: transparent;
+}
+body.about header nav form.form-inline {
+  position: relative;
+}
+body.about header nav form.form-inline input[type=search] {
+  color: #ffffff;
+}
+body.about header nav form.form-inline input[type=search]::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 500;
+}
+body.about header nav form.form-inline i {
+  left: 8px;
+  top: 10px;
+  color: #ffffff;
+}
+body.about header nav .navbar-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body.about header nav .navbar-nav .nav-item .nav-link {
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-size: 12px;
+  padding: 5px 0;
+  margin: 0 0.8rem;
+  color: #ffffff;
+  border-bottom: 1px solid transparent;
+}
+@media (max-width: 546px) {
+  body.about header nav .navbar-nav .nav-item .nav-link {
+    display: none;
+  }
+}
+body.about header nav .navbar-nav .nav-item .nav-link:hover {
+  border-bottom: 1px solid #ffffff;
+}
+body.about header section.hero {
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  height: 60vh;
+  background-color: transparent;
+  background-image: none;
+}
+@media (max-width: 360px) {
+  body.about header section.hero .para-branding {
+    width: auto;
+  }
+}
+body.about header section.hero .para-branding .slogen h2 {
+  font-size: 33px;
+  font-weight: 700;
+  letter-spacing: 0.14px;
+}
+
+main .text-content {
+  padding: 64px;
+  border-bottom: 1px solid #dbdedf;
+}
+@media (max-width: 776px) {
+  main .text-content {
+    padding: 30px 0;
+  }
+}
+main .text-content h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+main .text-content p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 18px 0;
+}
+main .text-content .list-group .list-group-item {
+  padding-top: 21px;
+  padding-bottom: 17px;
+  background-image: url("./../assets/right-arrow.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 8px;
+  cursor: pointer;
+}
+main .text-content .list-group .list-group-item:first-child {
+  border-top-color: transparent;
+}
+@media (min-width: 776px) {
+  main .text-content .list-group .list-group-item {
+    padding-left: 0;
+    border-left-color: transparent;
+    border-right-color: transparent;
+  }
+}
+@media (max-width: 776px) {
+  main .text-content .list-group .list-group-item {
+    background-position: 95%;
+  }
+}
+main .text-content .list-group .list-group-item a {
+  font-size: 15px;
+  font-weight: 600;
+  color: #2d3138;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+main .text-content .list-group .list-group-item a span:first-child {
+  margin-right: 0.6rem;
+}
+main .team {
+  padding: 64px;
+  text-align: center;
+}
+@media (max-width: 776px) {
+  main .team {
+    padding: 30px 0;
+  }
+}
+main .team h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+main .team p {
+  font-size: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+  letter-spacing: 0.14px;
+}
+main .team .grid {
+  margin-top: 64px;
+  text-align: left;
+}
+@media (max-width: 776px) {
+  main .team .grid .col-12 {
+    margin-bottom: 30px;
+  }
+}
+main .team .grid p {
+  line-height: 20px;
+}
+main .team .grid p.name {
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 10px;
 }
 
 /*# sourceMappingURL=main.css.map */
