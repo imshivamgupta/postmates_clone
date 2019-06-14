@@ -674,6 +674,11 @@ body.pickup header {
   background-position: 50% 0%;
   background-repeat: no-repeat;
 }
+@media (max-width: 992px) {
+  body.pickup header {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(255, 255, 255, 0) 36%), url(./../assets/pickup-phone.jpg);
+  }
+}
 body.pickup header nav {
   background-color: transparent;
 }
@@ -719,10 +724,26 @@ body.pickup header section.hero {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  color: #ffffff;
+  color: #fff;
   height: 100vh;
   background-color: transparent;
   background-image: none;
+}
+@media (max-width: 992px) {
+  body.pickup header section.hero {
+    justify-content: flex-end;
+    height: 55vh;
+  }
+}
+@media (max-width: 776px) {
+  body.pickup header section.hero {
+    height: 45vh;
+  }
+}
+@media (max-width: 556px) {
+  body.pickup header section.hero {
+    height: 30vh;
+  }
 }
 body.pickup header section.hero .para-branding {
   width: auto;
@@ -737,6 +758,16 @@ body.pickup header section.hero .para-branding .slogen h2 {
   letter-spacing: -2.7px;
   line-height: 48px;
 }
+@media (max-width: 992px) {
+  body.pickup header section.hero .para-branding .slogen h2 {
+    display: none;
+  }
+}
+@media (max-width: 776px) {
+  body.pickup header section.hero .para-branding .slogen p {
+    display: block;
+  }
+}
 body.pickup header section.hero .para-branding .slogen p button {
   position: absolute;
   bottom: -100%;
@@ -750,51 +781,90 @@ body.pickup header section.hero .para-branding .slogen p button {
   padding: 16px 70px;
   letter-spacing: 0.72px;
 }
-body.pickup main {
+@media (max-width: 992px) {
+  body.pickup header section.hero .para-branding .slogen p button {
+    display: block;
+    width: 100%;
+  }
+}
+body.pickup main.fees {
   margin-bottom: 100px;
 }
-body.pickup main .text-content {
-  padding: 0 70px;
+@media (min-width: 992px) {
+  body.pickup main.fees {
+    padding: 0 70px;
+  }
 }
-body.pickup main .text-content .title {
+@media (max-width: 992px) {
+  body.pickup main.fees {
+    margin: 50px auto;
+  }
+}
+body.pickup main.fees .text-content .title {
   padding-right: 7%;
 }
-body.pickup main .text-content .title h3 {
+body.pickup main.fees .text-content .title h3 {
   font-size: 48px;
   font-weight: 700;
   letter-spacing: -2.7px;
   line-height: 46px;
 }
-body.pickup main .text-content .title p {
+@media (max-width: 992px) {
+  body.pickup main.fees .text-content .title h3 {
+    font-size: 40px;
+    line-height: 42px;
+  }
+}
+body.pickup main.fees .text-content .title p {
   color: #8F95A3;
   font-size: 18px;
   font-weight: 400;
   line-height: -0.4px;
 }
-body.pickup main .text-content ul {
+@media (max-width: 992px) {
+  body.pickup main.fees .text-content .title p {
+    margin-top: 20px;
+  }
+}
+body.pickup main.fees .text-content ul {
   list-style-image: url("./../assets/list-image.svg");
   margin: 0;
 }
-body.pickup main .text-content ul li {
+@media (max-width: 992px) {
+  body.pickup main.fees .text-content ul {
+    padding-left: 22px;
+  }
+}
+body.pickup main.fees .text-content ul li {
   font-size: 20px;
   font-weight: 500;
   padding-bottom: 10px;
 }
-body.pickup section.restaurants .col-md-6:nth-child(2) {
-  padding-left: 7%;
+@media (min-width: 992px) {
+  body.pickup section.restaurants .col-12:nth-child(2) {
+    padding-left: 7%;
+  }
 }
-body.pickup section.restaurants .col-md-6 img {
-  max-width: 150%;
-  position: relative;
-  left: -25%;
+@media (min-width: 992px) {
+  body.pickup section.restaurants .col-12 img {
+    max-width: 150%;
+    position: relative;
+    left: -25%;
+  }
 }
-body.pickup section.restaurants .col-md-6 h3 {
+body.pickup section.restaurants .col-12 h3 {
   margin-top: 78px;
   font-size: 48px;
   font-weight: 700;
   letter-spacing: -2.7px;
 }
-body.pickup section.restaurants .col-md-6 p {
+@media (max-width: 992px) {
+  body.pickup section.restaurants .col-12 h3 {
+    font-size: 40px;
+    line-height: 42px;
+  }
+}
+body.pickup section.restaurants .col-12 p {
   font-size: 18px;
   font-weight: 400;
   color: #8F95A3;
@@ -802,26 +872,138 @@ body.pickup section.restaurants .col-md-6 p {
   letter-spacing: -0.4px;
   margin-right: 80px;
 }
+@media (max-width: 992px) {
+  body.pickup section.restaurants .col-12 p {
+    margin-right: 0;
+    margin-top: 20px;
+  }
+}
 body.pickup section.phone-showcase {
   margin-top: 150px;
+}
+@media (max-width: 992px) {
+  body.pickup section.phone-showcase {
+    margin-top: 70px;
+  }
 }
 body.pickup section.phone-showcase .row {
   background-color: #fffccf;
   padding: 0 70px;
-  max-height: 364px;
+  position: relative;
+}
+@media (max-width: 772px) {
+  body.pickup section.phone-showcase .row {
+    padding: 0;
+  }
+}
+@media (min-width: 992px) {
+  body.pickup section.phone-showcase .row {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
 }
 body.pickup section.phone-showcase .row h3 {
-  margin-top: 100px;
   font-size: 48px;
   font-weight: 700;
   letter-spacing: -2.7px;
 }
-body.pickup section.phone-showcase .row img {
-  position: relative;
-  top: -30%;
+@media (max-width: 992px) {
+  body.pickup section.phone-showcase .row h3 {
+    margin-top: 70px;
+    font-size: 40px;
+    line-height: 42px;
+  }
+}
+@media (min-width: 992px) {
+  body.pickup section.phone-showcase .row p {
+    margin-right: 10%;
+  }
+}
+@media (max-width: 992px) {
+  body.pickup section.phone-showcase .row p {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width) {
+  body.pickup section.phone-showcase .row .col-12 {
+    text-align: center;
+  }
+}
+@media (min-width: 992px) {
+  body.pickup section.phone-showcase .row .col-12 img {
+    position: absolute;
+    bottom: -70px;
+  }
 }
 body.pickup section.grab {
   padding: 150px;
+}
+@media (max-width: 992px) {
+  body.pickup section.grab {
+    padding: 0;
+  }
+}
+@media (max-width: 992px) {
+  body.pickup section.grab .row {
+    flex-direction: column-reverse;
+  }
+}
+@media (min-width: 992px) {
+  body.pickup section.grab .col-lg-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 7%;
+  }
+}
+body.pickup section.grab .col-lg-6 h3 {
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: -2.7px;
+}
+@media (max-width: 992px) {
+  body.pickup section.grab .col-lg-6 h3 {
+    margin-top: 70px;
+    font-size: 40px;
+    line-height: 42px;
+  }
+}
+body.pickup section.grab .col-lg-6 p {
+  color: #8F95A3;
+}
+@media (min-width: 992px) {
+  body.pickup section.grab .col-lg-6 p {
+    max-width: 332px;
+  }
+}
+body.pickup section.order {
+  background-color: #fafafa;
+}
+@media (min-width: 992px) {
+  body.pickup section.order {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+}
+@media (max-width: 360px) {
+  body.pickup section.order h1 {
+    width: 100%;
+    text-align: left;
+  }
+}
+@media (min-width: 992px) {
+  body.pickup section.order h1 {
+    font-size: 72px;
+    margin-bottom: 20px;
+  }
+}
+body.pickup section.order p {
+  width: auto;
+}
+@media (min-width: 992px) {
+  body.pickup section.order p {
+    margin-bottom: 30px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
