@@ -1,0 +1,133 @@
+header {
+    nav {
+        &.navbar {
+            padding: 1rem;
+        }
+        background-color: $primary;
+        .navbar-brand {
+            font-weight: 600;
+        }
+        ul.navbar-nav {
+            .nav-item {
+                .btn {
+                    font-size: 12px;
+                    font-weight: 600;
+                    padding: 4px 16px;
+                    border-color: rgba(45, 49, 56, 0.15);
+                    text-transform: uppercase;
+                    border-radius: 16px;
+                    // @media (max-width: 360px) {
+                    //     margin-bottom: 10px;
+                    // }
+                }
+            }
+        }
+        form.form-inline {
+            input[type='search'] {
+                @include outline-rm;
+                border: none;
+                background-color: transparent;
+                padding-left: 32px;
+                position: relative;
+            }
+            i {
+                position: absolute;
+                color: gray;
+                -webkit-text-stroke: 12px background-color;
+            }
+        }
+    }
+    section.hero {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        height: 80vh;
+        @media (max-width: 776px) {
+            height: 70vh;
+        }
+        background-color: $primary;
+        background-image: url('./../assets/food.webp'),
+        url('./../assets/food2.webp');
+        background-size: 50%,
+        50%;
+        background-repeat: no-repeat,
+        no-repeat;
+        background-position: -50% 100%,
+        148% 100%;
+        @media (max-width: 500px) {
+            background-image: url('./../assets/food.webp');
+            background-size: 78%;
+            background-repeat: no-repeat;
+            background-position: 50% 120%;
+        }
+        @media (min-width: 510px) and (max-width: 776px) {
+            background-image: url('./../assets/food.webp');
+            background-size: 60%;
+            background-repeat: no-repeat;
+            background-position: 50% 120%;
+        }
+        .para-branding {
+            width: 50%;
+            @media (max-width: 776px) {
+                width: 80%;
+            }
+            text-align: center;
+            .logo {
+                margin: 20px 0;
+            }
+            .slogen {
+                h2 {
+                    font-size: 56px;
+                    font-weight: 600;
+                    line-height: 64px;
+                    letter-spacing: -3.4px;
+                    // @media (max-width: 776px) {
+                    //     font-size: 48px;
+                    // }
+                    @media (max-width: 776px) {
+                        font-size: 34px;
+                        line-height: 34px;
+                        margin-bottom: 25px;
+                    }
+                }
+                p {
+                    font-size: 17px;
+                    @media (max-width: 776px) {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .row {
+            form {
+                .input-group {
+                    .input-group-text {
+                        background-color: #fff;
+                        border-color: transparent;
+                    }
+                    input.form-control {
+                        width: 396px;
+                        @media (max-width: 776px) {
+                            width: 242px;
+                        }
+                        padding-left: 0;
+                    }
+                    .form-control {
+                        width: auto;
+                        height: 56px;
+                        @include outline-rm;
+                        border-color: transparent;
+                    }
+                    button.form-control {
+                        width: 58px;
+                    }
+                }
+                button {
+                    background-color: $submit-btn;
+                    border-color: $submit-btn;
+                }
+            }
+        }
+    }
+}

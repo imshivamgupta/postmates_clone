@@ -1,0 +1,12 @@
+// Colors
+$primary: #f5e7d8;
+$pink: #f4dcdc;
+$primary-text: #2D3138;
+$secondary-text: #8F95A3;
+$submit-btn: #00CC99;
+@mixin outline-rm {
+    &:focus {
+        outline: none !important;
+        box-shadow: none;
+    }
+}

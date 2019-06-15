@@ -1,0 +1,20 @@
+// Importing Bootstrap 4.3
+$theme-colors: ("success": #00CC99);
+$container-max-widths: (lg: 1024px);
+// @import "../node_modules/bootstrap/scss/bootstrap";
+@import './variables';
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,400,500,700,800&display=swap');
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-nav {
+    flex-direction: row;
+}
+
+@import './header';
+@import './details';
+@import './about';
+@import './pickup';
+@import './feed';
