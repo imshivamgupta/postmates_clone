@@ -1074,6 +1074,8 @@ body.feed nav form.form-inline i {
   color: #000;
 }
 body.feed header section.hero {
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -1083,12 +1085,6 @@ body.feed header section.hero {
   background-image: url("./../assets/food.webp");
   background-position: 70% 40%;
 }
-@media (min-width: 992px) {
-  body.feed header section.hero {
-    position: fixed;
-    width: 100%;
-  }
-}
 @media (max-width: 1072px) {
   body.feed header section.hero {
     background-position: 70% 100%;
@@ -1097,7 +1093,7 @@ body.feed header section.hero {
 @media (max-width: 992px) {
   body.feed header section.hero {
     justify-content: start;
-    height: 35vh;
+    height: 230px;
     background-position: 70% 0;
   }
 }
@@ -1129,10 +1125,11 @@ body.feed header section.hero .para-branding .slogen h2 {
 body.feed section.item-group {
   background-color: #fff;
   position: relative;
+  margin-top: 330px;
 }
-@media (min-width: 992px) {
+@media (max-width: 992px) {
   body.feed section.item-group {
-    margin-top: 330px;
+    margin-top: 230px;
   }
 }
 body.feed section.item-group .tag-header {
