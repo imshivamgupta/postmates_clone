@@ -24,6 +24,9 @@ body.about {
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                @media (max-width: 992px) {
+                    align-items: flex-start;
+                }
                 .nav-item {
                     .nav-link {
                         @media (max-width: 546px) {

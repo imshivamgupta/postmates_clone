@@ -3,8 +3,10 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-.navbar-nav {
-  flex-direction: row;
+@media (min-width: 992px) {
+  .navbar-nav {
+    flex-direction: row;
+  }
 }
 
 header nav {
@@ -542,6 +544,11 @@ body.about header nav .navbar-nav {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 992px) {
+  body.about header nav .navbar-nav {
+    align-items: flex-start;
+  }
+}
 body.about header nav .navbar-nav .nav-item .nav-link {
   text-transform: uppercase;
   letter-spacing: 1.3px;
@@ -702,6 +709,11 @@ body.pickup header nav .navbar-nav {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 992px) {
+  body.pickup header nav .navbar-nav {
+    align-items: flex-start;
+  }
 }
 body.pickup header nav .navbar-nav .nav-item .nav-link {
   text-transform: uppercase;
@@ -1022,6 +1034,11 @@ body.feed nav ul.navbar-nav {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 992px) {
+  body.feed nav ul.navbar-nav {
+    align-items: flex-start;
+  }
 }
 body.feed nav ul.navbar-nav .nav-item .nav-link {
   text-transform: uppercase;

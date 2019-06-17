@@ -10,7 +10,9 @@ body {
 }
 
 .navbar-nav {
-    flex-direction: row;
+    @media(min-width: 992px) {
+        flex-direction: row;
+    }
 }
 
 @import './header';
